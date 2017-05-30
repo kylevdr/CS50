@@ -1,2 +1,2 @@
 # CS50
-CS50 Harvard.
+Harvard CS50x 2017.
