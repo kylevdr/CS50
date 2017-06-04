@@ -22,7 +22,8 @@ int main(void)
   return 0;
 }
 
-bool validate(long long ccnum) {
+bool validate(long long ccnum)
+{
   long long checksum = 0;
   for (long long i = 10; ccnum / i > 0; i *= 100)
   {
@@ -49,15 +50,18 @@ bool validate(long long ccnum) {
 long long square(int base, int exp)
 {
   long long result = 1;
-  for (int i = 0; i < exp; i++) {
+  for (int i = 0; i < exp; i++)
+  {
     result *= base;
   }
   return result;
 }
 
-string checkBrand(long long ccnum) {
+string checkBrand(long long ccnum)
+{
   int length = 0;
-  for (long long i = 1; ccnum / i > 0; i *= 10) {
+  for (long long i = 1; ccnum / i > 0; i *= 10)
+  {
     length ++;
   }
   int firstTwo = ccnum / square(10, length - 2);
